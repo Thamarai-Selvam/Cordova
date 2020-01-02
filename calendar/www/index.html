@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Calendar</title>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width height=device-height" />
+
+    <link rel="stylesheet" href="css/calendar.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body onload="fillCalendar();">
+    <div class="app">
+
+        <header>
+            <h1 id="year"></h1>
+            <h2 id="month"></h2>
+            <button id="prev" onclick="prev();"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </button>
+            <button id="next" onclick="next();"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </button>
+        </header>
+
+        <nav id="days">
+            <div class="dayname">Sunday</div>
+            <div class="dayname">Monday</div>
+            <div class="dayname">Tuesday</div>
+            <div class="dayname">Wednesday</div>
+            <div class="dayname">Thursday</div>
+            <div class="dayname">Friday</div>
+            <div class="dayname">Saturday</div>
+        </nav>
+
+        <nav id="abr">
+            <div class="dayname">Sun</div>
+            <div class="dayname">Mon</div>
+            <div class="dayname">Tue</div>
+            <div class="dayname">Wed</div>
+            <div class="dayname">Thu</div>
+            <div class="dayname">Fri</div>
+            <div class="dayname">Sat</div>
+        </nav>
+
+        <main></main>
+    </div>
+    <script src="js/calendar.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
