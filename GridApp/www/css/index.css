@@ -1,0 +1,19 @@
+body {
+    background-color: #EEEEEE;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 85vw;
+    height: 85vh;
+    box-shadow: 10px 10px 10px 8px #8BC34A;
+    border-radius: 10px;
+}
+
+.item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    text-align: center;
+    background-image: radial-gradient(#0097A7, #80DEEA, #EEEEEE);
+}
